@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: university-relations
+  description: University Relations application
+  annotations:
+    github.com/project-slug: HarinduA/UniversityRelations
+spec:
+  type: service
+  owner: guest
+  lifecycle: production
