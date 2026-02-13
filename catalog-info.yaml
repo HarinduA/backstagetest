@@ -9,4 +9,5 @@ spec:
   type: team
   parent: default
   members:
-    - HarinduA   # replace with your email or GitHub username
+    - user:development/harinduadhikari
+  children: []   # <- REQUIRED, even if empty
