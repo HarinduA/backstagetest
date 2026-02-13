@@ -1,13 +1,12 @@
 apiVersion: backstage.io/v1alpha1
-kind: Group
+kind: Component
 metadata:
-  name: dev-team
-  description: Development team responsible for services
+  name: backstagetest
+  description: Test project to track GitHub Actions
   annotations:
-    github.com/team-slug: HarinduA/dev-team
+    github.com/project-slug: HarinduA/backstagetest
+    backstage.io/view-url: https://github.com/HarinduA/backstagetest
 spec:
-  type: team
-  parent: default
-  members:
-    - user:development/harinduadhikari
-  children: []   # <- REQUIRED, even if empty
+  type: service
+  owner: group:default/dev-team
+  lifecycle: production
