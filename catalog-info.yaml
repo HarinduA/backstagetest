@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: university-relations
-  description: University Relations application
+  name: backstagetest
+  description: Test project to track GitHub Actions
   annotations:
-    github.com/project-slug: HarinduA/UniversityRelations
+    github.com/project-slug: HarinduA/backstagetest
 spec:
   type: service
-  owner: guest
+  owner: dev-team
   lifecycle: production
