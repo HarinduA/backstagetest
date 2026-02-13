@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Group
 metadata:
-  name: backstagetest
-  description: Test project to track GitHub Actions
+  name: dev-team
+  description: Development team responsible for services
   annotations:
-    github.com/project-slug: HarinduA/backstagetest
-    github.com/workflow-slug: ci.yml
+    github.com/team-slug: HarinduA/dev-team
 spec:
-  type: service
-  owner: dev-team
-  lifecycle: production
+  type: team
+  parent: default
+  members:
+    - HarinduA   # replace with your email or GitHub username
