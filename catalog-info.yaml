@@ -5,6 +5,7 @@ metadata:
   description: Test project to track GitHub Actions
   annotations:
     github.com/project-slug: HarinduA/backstagetest
+    github.com/workflow-slug: ci.yml
 spec:
   type: service
   owner: dev-team
