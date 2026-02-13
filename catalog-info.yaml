@@ -1,3 +1,24 @@
+# ===========================
+# Group definition
+# ===========================
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dev-team
+  description: Development team responsible for services
+  annotations:
+    github.com/team-slug: HarinduA/dev-team
+spec:
+  type: team
+  parent: default       # REQUIRED
+  members:
+    - user:development/harinduadhikari
+  children: []         # REQUIRED, even if empty
+
+# ===========================
+# Component definition
+# ===========================
+---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -8,5 +29,5 @@ metadata:
     backstage.io/view-url: https://github.com/HarinduA/backstagetest
 spec:
   type: service
-  owner: group:default/dev-team
+  owner: group:default/dev-team   # must match group above
   lifecycle: production
